@@ -9,6 +9,13 @@
     />
     <meta name="author" content="Souvik Mondal" />
     <title>DAY2-HTML</title>
+    <style>
+        table,td,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
   </head>
   <body>
     <fieldset>
@@ -83,7 +90,80 @@
     <fieldset>
         <legend>working with Tables</legend>
         <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Expences</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>8999</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>15840</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>6477</td>
+                </tr>
+            </tbody>
             
+            <tfoot>
+                <tr>
+                <th>Total</th>
+                <th>31316</th>
+                </tr>
+            </tfoot>
+            
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00am</td>
+                <td rowspan="2">5:00pm</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity:DTD and relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00am</td>
+                <td>11:00am</td>
+                <td rowspan="1.5">XPath</td>
+            </tr>
+            <tr>
+                <td>11:00am</td>
+                <td>2:00am</td>
+                <td>XSL Transformations</td>
+            </tr>
+            <tr>
+                <td>2:00am</td>
+                <td>5:00pm</td>
+                <td>Introduction to Programming</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00am</td>
+                <td>12:00pm</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
         </table>
     </fieldset>
   </body>
