@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="A little hands on what i have learned about HTML in the second Day"
+    />
+    <meta name="author" content="Souvik Mondal" />
+    <title>DAY3-HTML</title>
+</head>
+<body>
+    <h1>Form Playground</h1>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="firstname">FirstName:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Jane" required autocomplete="on" autofocus><br><br>
+        <label for="lastname">LastName:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Doe" required autocomplete="on" ><br><br>
+        <label for="email">EMail:</label>
+        <input type="email" id="email" name="email" placeholder="JaneDoe@gmail.com" required autocomplete="on" ><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+        <label for="phn">PhoneNumber:</label>
+        <input type="tel" id="phn" placeholder="5555555555" pattern="[0-9]{5}[0-9]{5}" required name="phone_number"><br><br>
+        <label for="dob">DateOfBirth:</label>
+        <input type="number" name="DOB" id="dob" min="1980" max="2025" value="2000" step="1" required><br><br>
+        <label for="orders">GiveOrder:</label>
+        <select name="order" id="orders" required  >
+            <option value="none"><i>select</i></option>
+            <optgroup label="beverages">
+            <option value="warm water" selected>warm water</option>
+            <option value="coke">coke</option>
+            <option value="thumbsUp">thumpsUp</option>
+            <option value="mazza">Mazza</option>
+            </optgroup>
+            <optgroup label="coffee">
+            <option value="cappuchino">Cappuchino</option>
+            <option value="americano">Americano</option>
+            <option value="latte">Latte</option>
+            <option value="macha">Macha</option>
+            <option value="bobbatea">BobbaTea</option>
+            </optgroup>
+        </select><br><br>
+        <label for="search">SearchCoffee:</label>
+        <input type="text" list="search_coffee" name="search_coffee">
+        <datalist id="search_coffee">
+            <option value="americano">americano</option>
+            <option value="expresso">expresso</option>
+            <option value="cappuchino">cappuchino</option>
+            <option value="latte">latte</option>
+            <option value="macha">macha</option>
+        </datalist>
+        <fieldset>
+            <legend>pets</legend>
+            <input type="checkbox" id="dog" name="pet" value="dog">
+            <label for="dog">dog</label>
+            <input type="checkbox" id="cat" name="pet" value="cat">
+            <label for="cat">cat</label>
+            <input type="checkbox" id="bird" name="pet" value="bird">
+            <label for="bird">bird</label>
+            <input type="checkbox" id="other" name="pet" value="other">
+            <label for="other">other</label>
+        </fieldset>
+        <fieldset>
+            <legend>gender</legend>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="other_g" value="other">
+            <label for="other_g">other</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <hr><hr>
+    <h1>welcome to XYZ!!</h1>
+    <form action="https://httpbin.org/post" method="post">
+        <table>
+            <tr>
+                <td><label for="username">UserName:</label>
+                    </td>
+                    <td><input type="text" id="username" name="username" placeholder="Jane Doe" required autocomplete="on" ></td>
+                
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label>
+                </td>
+                <td><input type="password" id="password" name="password" placeholder="Password" required ></td>
+            </tr>
+            <tr>
+                <td><button type="reset">Reset</button></td>
+                <td><button type="reset">Search</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
